@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Ass3Final</string>
+    <string name="password">password</string>
+    <string name="userName">Username</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Calorie Tracker</string>
+    <string name="nav_header_subtitle">this app can help you track you health</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="spinner_title">Level of Activity (1 to 5)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SelectADate">Select a date to view the report</string>
+    <string name="begin">Begin</string>
+    <string name="end">End</string>
+</resources>

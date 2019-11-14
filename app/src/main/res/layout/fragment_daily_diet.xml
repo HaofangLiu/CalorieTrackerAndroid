@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyDietFragment"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinnerFoodCate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerFoodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnAddConsumption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new Consumption"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextAddFoodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search a new food item"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnFindFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFindFood"/>
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnAddFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new food"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</LinearLayout>

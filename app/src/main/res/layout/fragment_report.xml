@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFragment"
+    android:orientation="horizontal">
+
+    <EditText
+    android:id="@+id/PickDate"
+    android:clickable="true"
+    android:hint="@string/SelectADate"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:focusable="false"
+    android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btnShowPie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PickDate"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-49dp"
+
+        android:layout_toRightOf="@+id/PickDate"
+        android:text="show" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:id="@+id/pieChart"
+        android:layout_below="@+id/PickDate"
+        >
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <EditText
+        android:id="@+id/StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:hint="Start date"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"
+        />
+
+    <EditText
+        android:id="@+id/EndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/StartDate"
+        android:minWidth="100dp"
+        android:hint="end Date"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"/>
+
+    <Button
+        android:id="@+id/showBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/EndDate"
+        android:text="Show bar chart"
+        android:textSize="15dp"
+        android:layout_below="@+id/pieChart"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barchart"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/showBar"/>
+
+
+
+</RelativeLayout>
